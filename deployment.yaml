@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: tekton-demot-app
+  name: tekton-demot-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tekton-demot-app
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: tekton-demot-app
+    spec:
+      containers:
+      - image: hicham7farhi/tekton-demo:0.0.2
+        name: tekton-demo
