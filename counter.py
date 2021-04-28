@@ -12,7 +12,7 @@ class MyHandler(http.server.BaseHTTPRequestHandler):
             REQUESTS.inc()
             self.send_response(200)
             self.end_headers()
-            self.wfile.write(b"Test From Tekton 2 !!!")
+            self.wfile.write(b"Test From Tekton 3 !!!")
 
 if __name__ == "__main__":
         start_http_server(8000)
