@@ -9,10 +9,8 @@ spec:
   selector:
     matchLabels:
       app: tekton-demot-app
-  strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: tekton-demot-app
     spec:
